@@ -1,0 +1,52 @@
+.img
+{
+	width:100%;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+}
+.imgimg
+{
+	width:50%;
+}
+
+.signout
+{
+text-shadow: 0 0 2px #fff, 0 0 3px #7D39D0, 0 0 4px #7D39D0, 0 0 5px #7D39D0, 0 0 6px #7D39D0, 0 0 7px #7D39D0, 0 0 8px #7D39D0;
+font-size: 2rem;
+color: wheat;
+background-color:#393384;
+padding:10px;
+margin:5px;
+border:0px solid transparent;
+border-radius:.25em;
+}
+.modal
+{
+	position: fixed;
+	top: 0;
+	padding:10px;
+	font-size:1.5rem;
+	background-color:#645CFF;
+	border:5px solid transparent;
+	border-radius:10px;
+	margin:10px;
+	width:30%;
+}
+.modal div
+{
+	height:9px;
+	position:absolute;
+	bottom:0;
+	left:0;
+	animation-name:time;
+	animation-duration:2s;
+	animation-timing-function:linear;
+	animation-iteration-count:1;
+	background-color:#D88C9A;
+}
+@keyframes time 
+{
+	from{width:100%;}
+	to{width:0%}
+}
