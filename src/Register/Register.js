@@ -26,12 +26,9 @@ class Register extends Component
 	onSubmitRegister=(event)=>
 	{
 		event.preventDefault();//to prevent post this port
-		fetch("https://loginspindle-api.herokuapp.com//register",{
+		fetch("https://loginspindle-api.herokuapp.com/register",{
 			method: "POST",
-			headers : { 
-        'Content-Type': 'application/json',
-        'Accept': 'application/json'
-       },
+			headers: {'Content-Type': 'application/json'},
     	  	body: JSON.stringify({
 	        email: this.state.email,
 	        name: this.state.name,
@@ -41,7 +38,7 @@ class Register extends Component
       .then(response => response.json())
       .then(user => {
       	console.log(user)
-          if (user==='ok') {
+          if (user.name) {
 			this.props.onRouteChange('home');
 			this.props.enter('Register')
 			}
