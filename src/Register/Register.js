@@ -50,6 +50,13 @@ class Register extends Component
 	}
 	render()
 	{
+		$(document).ready(function(){
+		$('body').css('background-color','#5d67c0');
+		if($(window).width()<1000)
+		{
+			$('.logo').css('display','none');
+		}
+		});
 		const {onRouteChange}=this.props;
 		return (
 			<div className="main">
@@ -78,6 +85,7 @@ class Register extends Component
 			    </div>
 			  </form>
 			</main>
+			<img className="logo" src="https://alexwebdevelop.com/wp-content/uploads/2019/08/php-login-and-authentication-the-definitive-guide.png"/>
 			</div>
 			)
 	}
