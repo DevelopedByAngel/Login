@@ -55,7 +55,7 @@ class Register extends Component
 		$('body').css('background-color','#5d67c0');
 		if($(window).width()>1000)
 		{
-			$('main').after('<img src="https://alexwebdevelop.com/wp-content/uploads/2019/08/php-login-and-authentication-the-definitive-guide.png" width="400"');
+			$('main').before('<img src="https://alexwebdevelop.com/wp-content/uploads/2019/08/php-login-and-authentication-the-definitive-guide.png" width="400"');
 		}
 		});
 		const {onRouteChange}=this.props;
