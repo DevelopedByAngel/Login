@@ -52,10 +52,15 @@ class Signin extends Component
 	render(){
 $(document).ready(function(){
 		$('body').css('background-color','#5d67c0');
+		if($(window).width()<1000)
+		{
+			$('main').before('<img src="https://acad.xlri.ac.in/evening/images/login.svg" width="400"');
+		}
 		});
 		const {onRouteChange}=this.props;
 		return (
 			<div className="main">
+			<img src="https://studymonk.in/wp-content/uploads/2019/02/tribe.svg"/>
 			<main className="pa4 black-80 br2 ba dark-gray b--black-10 mv4 w-100 w-50-m w-25-l mw5 center">
 			  <form className="measure center" onSubmit={(e)=>this.onSubmitsignin(e)} method="post">
 			    <fieldset id="sign_up" className="ba b--transparent ph0 mh0">
