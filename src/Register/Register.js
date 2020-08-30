@@ -50,6 +50,13 @@ class Register extends Component
 	}
 	render()
 	{
+		$(document).ready(function(){
+		$('body').css('background-color','#5d67c0');
+		if($(window).width()>1000)
+		{
+			$('main').before('<img src="https://acad.xlri.ac.in/evening/images/login.svg" width="400"');
+		}
+		});
 		const {onRouteChange}=this.props;
 		return (
 			<div className="main">
