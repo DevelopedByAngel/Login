@@ -1,5 +1,7 @@
 import React,{Component} from 'react';
 import '../Signin/Signin.css'
+import $ from 'jquery';
+import './Register.css'
 class Register extends Component 
 {
 	constructor(props)
