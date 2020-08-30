@@ -1,5 +1,6 @@
 import React,{Component} from 'react';
-import '../Signin/Signin.css'
+import '../Signin/Signin.css';
+import $ from 'jquery';
 class Register extends Component 
 {
 	constructor(props)
@@ -54,7 +55,7 @@ class Register extends Component
 		$('body').css('background-color','#5d67c0');
 		if($(window).width()>1000)
 		{
-			$('main').before('<img src="https://acad.xlri.ac.in/evening/images/login.svg" width="400"');
+			$('main').after('<img src="https://alexwebdevelop.com/wp-content/uploads/2019/08/php-login-and-authentication-the-definitive-guide.png" width="400"');
 		}
 		});
 		const {onRouteChange}=this.props;
