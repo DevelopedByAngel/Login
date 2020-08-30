@@ -1,5 +1,6 @@
 import React,{Component} from 'react';
 import '../Signin/Signin.css';
+import './Register.css'
 import $ from 'jquery';
 class Register extends Component 
 {
