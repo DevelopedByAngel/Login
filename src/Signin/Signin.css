@@ -54,3 +54,7 @@ body
 {
 	width:400px;
 }
+input
+{
+	border-color:#00000047;
+}
