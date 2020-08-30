@@ -1,7 +1,5 @@
 import React,{Component} from 'react';
-import '../Signin/Signin.css';
-import './Register.css'
-import $ from 'jquery';
+import '../Signin/Signin.css'
 class Register extends Component 
 {
 	constructor(props)
@@ -52,13 +50,6 @@ class Register extends Component
 	}
 	render()
 	{
-		$(document).ready(function(){
-		$('body').css('background-color','#5d67c0');
-		if($(window).width()>1000)
-		{
-			$('main').before('<img src="https://alexwebdevelop.com/wp-content/uploads/2019/08/php-login-and-authentication-the-definitive-guide.png" width="400"');
-		}
-		});
 		const {onRouteChange}=this.props;
 		return (
 			<div className="main">
@@ -67,15 +58,15 @@ class Register extends Component
 			    <fieldset id="sign_up" className="ba b--transparent ph0 mh0">
 			      <legend className="f1 fw6 ph0 mh0" >Register</legend>
 			      <div className="mt3">
-			        <label className="db fw6 lh-copy f6" htmlFor="email-address">Name</label>
+			        <label className="db fw6 lh-copy f3" htmlFor="email-address">Name</label>
 			        <input className="pa2 input-reset ba bg-transparent  hover-white w-100 hover-bg" type="text" name="name" required id="name" onChange={(e)=>this.onNameChange(e)}/>
 			      </div>
 			      <div className="mt3">
-			        <label className="db fw6 lh-copy f6" htmlFor="email-address">Email</label>
+			        <label className="db fw6 lh-copy f3" htmlFor="email-address">Email</label>
 			        <input className="pa2 input-reset ba bg-transparent  hover-white w-100 hover-bg" type="email" name="email-address" required  id="email-address" onChange={(e)=>this.onEmailChange(e)}/>
 			      </div>
 			      <div className="mv3">
-			        <label className="db fw6 lh-copy f6" htmlFor="password">Password</label>
+			        <label className="db fw6 lh-copy f3" htmlFor="password">Password</label>
 			        <input className="b pa2 input-reset ba bg-transparent  hover-white w-100 hover-bg" type="password" name="password" required id="password" onChange={(e)=>this.onPasswordChange(e)}/>
 			      </div>
 			    </fieldset>
